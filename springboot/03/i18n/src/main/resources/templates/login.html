@@ -2,25 +2,35 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <title>Title</title>
+    <title th:text="#{login.title}">Sign In</title>
 </head>
 <body>
-<form action="" method="post">
+<form action="#" method="post">
     <label th:text="#{login.username}">Username</label>
-    <input type="text"  name="username"  placeholder="Username" th:placeholder="#{login.username}">
+    <input type="text" name="username" placeholder="Username" th:placeholder="#{login.username}">
+
     <label th:text="#{login.password}">Password</label>
     <input type="password" name="password" placeholder="Password" th:placeholder="#{login.password}">
-    <br> <br>
+
+    <br><br>
     <div>
         <label>
-            <input type="checkbox" value="remember-me"/> [[#{login.remmber}]]
+            <input type="checkbox" value="remember-me"/> <span th:text="#{login.remember}">Remember me</span>
         </label>
     </div>
+
     <br>
-    <button  type="submit" th:text="#{login.sign}">Sign in</button>
-    <br> <br>
-    <a th:href="@{/login.html(language='zh_CN')}">translatedText</a>
-    <a th:href="@{/login.html(language='en_US')}">English</a>
+    <button type="submit" th:text="#{login.signin}">Sign in</button>
+    <br><br>
+
+    <div>
+        <strong th:text="#{login.switch}">Language</strong>:
+        <a th:href="@{/login.html(lang='en_US')}">English</a>
+        |
+        <a th:href="@{/login.html(lang='zh_CN')}">Chinese</a>
+        |
+        <a th:href="@{/login.html(lang='es_ES')}">Spanish</a>
+    </div>
 </form>
 </body>
 </html>

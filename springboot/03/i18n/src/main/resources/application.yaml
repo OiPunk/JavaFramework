@@ -1,3 +1,5 @@
 spring:
   messages:
     basename: i18n/login
+    encoding: UTF-8
+    fallback-to-system-locale: false
