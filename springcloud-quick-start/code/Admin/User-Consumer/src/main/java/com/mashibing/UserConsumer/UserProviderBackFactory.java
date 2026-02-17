@@ -35,10 +35,10 @@ public class UserProviderBackFactory implements FallbackFactory<ConsumerApi> {
 				System.out.println(cause);
 				if(cause instanceof InternalServerError) {
 					
-					return "远程服务器 500" + cause.getLocalizedMessage();
+					return "translatedText 500" + cause.getLocalizedMessage();
 				}else {
 					
-					return "呵呵";
+					return "translatedText";
 				}
 			}
 			

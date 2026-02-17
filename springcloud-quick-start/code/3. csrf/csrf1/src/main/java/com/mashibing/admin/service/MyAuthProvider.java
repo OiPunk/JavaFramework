@@ -21,34 +21,34 @@ public class MyAuthProvider implements AuthenticationProvider {
 		// TODO Auto-generated method stub
 		
 		
-		// 穷举密码  限制 重试次数~
+		// translatedText  translatedText translatedText~
 		
-		System.out.println("开始校验账号密码 是否匹配");
+		System.out.println("translatedText translatedText");
 		
-		// 表单提交上来的数据
+		// translatedText
 		String username = authentication.getPrincipal().toString();
 		String rawPassword = authentication.getCredentials().toString();
 		
 		
 		System.out.println("authentication" + authentication);
-		// 去数据库拿出来 User对象
+		// translatedText UsertranslatedText
 		UserDetails userDetails = userSrv.loadUserByUsername(username);
 		
-		// 比对
-			// 明文 ，数据库里存的密文
-		// 防程序员的~
+		// translatedText
+			// translatedText ，translatedText
+		// translatedText~
 	
 			if(new BCryptPasswordEncoder().matches(rawPassword, userDetails.getPassword())) {
-				// 密码通过 登录成功
+				// translatedText translatedText
 				
 				//
 				UsernamePasswordAuthenticationToken authenticationToken = 
 						new UsernamePasswordAuthenticationToken(username, userDetails.getPassword(), userDetails.getAuthorities());
-					//JWT  签名 sign
+					//JWT  translatedText sign
 			return authentication;
 			}else {
 				
-				throw new BadCredentialsException("用户名 或 密码错误");
+				throw new BadCredentialsException("translatedText translatedText translatedText");
 			}
 	}
 

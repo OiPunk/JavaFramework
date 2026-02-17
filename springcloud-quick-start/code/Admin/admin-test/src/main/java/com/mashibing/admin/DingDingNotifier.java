@@ -21,10 +21,10 @@ public class DingDingNotifier extends AbstractStatusChangeNotifier  {
         String status = instance.getStatusInfo().getStatus();
         Map<String, Object> details = instance.getStatusInfo().getDetails();
         StringBuilder str = new StringBuilder();
-        str.append("系统警告 : 【" + serviceName + "】");
-        str.append("【服务地址】" + serviceUrl);
-        str.append("【状态】" + status);
-        str.append("【详情】" + JSONObject.toJSONString(details));
+        str.append("translatedText : 【" + serviceName + "】");
+        str.append("【translatedText】" + serviceUrl);
+        str.append("【translatedText】" + status);
+        str.append("【translatedText】" + JSONObject.toJSONString(details));
         return Mono.fromRunnable(() -> {
             DingDingMessageUtil.sendTextMessage(str.toString());
         });

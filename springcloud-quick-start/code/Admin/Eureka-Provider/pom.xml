@@ -29,7 +29,7 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 		
-		<!-- 用来上报节点信息 -->
+		<!-- translatedText -->
 		<dependency>
 		     <groupId>org.springframework.boot</groupId>
 		     <artifactId>spring-boot-starter-actuator</artifactId>

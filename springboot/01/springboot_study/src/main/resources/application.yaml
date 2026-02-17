@@ -3,7 +3,7 @@
 person:
   last_name: zhangsan
   age: 12
-  sex: 男
+  sex: translatedText
   likes:
     - book
     - movie

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+<!--
+    &lt;!&ndash;
+    translatedText，translatedTextxmltranslatedText，translatedText
+    translatedTextxmltranslatedText，translatedTextxmltranslatedText，translatedText
+    translatedTextxmltranslatedText，translatedTextxmltranslatedText
+    &ndash;&gt;
+
+
+    &lt;!&ndash;translatedText，nametranslatedTextsettranslatedText&ndash;&gt;
+    <bean id="person" class="com.mashibing.bean.Person">
+        <property name="id" value="1"></property>
+        <property name="name" value="zhangsan"></property>
+        <property name="age" value="20"></property>
+        <property name="gender" value="translatedText"></property>
+&lt;!&ndash;        <property name="date" value="2020/02/08"></property>&ndash;&gt;
+    </bean>
+
+    &lt;!&ndash;translatedText，translatedTextnametranslatedText？translatedText&ndash;&gt;
+    &lt;!&ndash;
+    name:translatedText
+    value:translatedText
+    type:translatedText
+    index:translatedText，translatedText0translatedText
+    &ndash;&gt;
+    <bean id="person2" class="com.mashibing.bean.Person">
+        <constructor-arg name="id" value="2"></constructor-arg>
+        <constructor-arg name="name" value="lisi"></constructor-arg>
+        <constructor-arg name="age" value="22"></constructor-arg>
+        <constructor-arg name="gender" value="translatedText"></constructor-arg>
+    </bean>
+
+    &lt;!&ndash;translatedText，translatedTextnametranslatedText，translatedText
+    translatedText，translatedTextindextranslatedText，translatedText0translatedText
+    &ndash;&gt;
+    <bean id="person3" class="com.mashibing.bean.Person">
+        <constructor-arg  value="2"></constructor-arg>
+        <constructor-arg  value="translatedText" index="3"></constructor-arg>
+        <constructor-arg  value="22"></constructor-arg>
+        <constructor-arg  value="lisi" index="1"></constructor-arg>
+    </bean>
+
+    &lt;!&ndash;
+    translatedText，translatedText，translatedText
+    translatedText，translatedTexttypetranslatedText
+    &ndash;&gt;
+    <bean id="person4" class="com.mashibing.bean.Person">
+        <constructor-arg  value="4"></constructor-arg>
+        <constructor-arg  value="wangwu" ></constructor-arg>
+        <constructor-arg  value="22" type="java.lang.Integer"></constructor-arg>
+    </bean>
+    &lt;!&ndash;
+    translatedText：
+         translatedText，translatedTextname,valuetranslatedText，translatedTextindextranslatedTexttypetranslatedText，translatedText
+    &ndash;&gt;
+
+    &lt;!&ndash;
+    translatedTextptranslatedText
+    &ndash;&gt;
+    <bean id="person5" class="com.mashibing.bean.Person" p:id="5" p:name="wangwu" p:age="25" p:gender="translatedText">
+    </bean>
+
+    &lt;!&ndash;translatedText&ndash;&gt;
+    <bean id="person6" class="com.mashibing.bean.Person">
+        <property name="id" value="6"></property>
+        <property name="name" value="zhangsan6"></property>
+        <property name="age" value="26"></property>
+        <property name="gender" value="translatedText6"></property>
+        &lt;!&ndash;translatedText,translatedTextarraytranslatedText&ndash;&gt;
+&lt;!&ndash;        <property name="hobbies" value="book,girl,movie"></property>&ndash;&gt;
+        <property name="hobbies">
+            <array>
+                <value>book</value>
+                <value>girl</value>
+                <value>movie</value>
+            </array>
+        </property>
+        &lt;!&ndash;translatedText,translatedTextreftranslatedTextbean&ndash;&gt;
+        <property name="address" ref="address"></property>
+        &lt;!&ndash;translatedTextlisttranslatedText&ndash;&gt;
+&lt;!&ndash;        <property name="lists" value="1,2,3"></property>&ndash;&gt;
+        <property name="lists">
+            <list>
+                &lt;!&ndash;translatedTextbean,translatedTextIOCtranslatedText&ndash;&gt;
+                <bean id="address2" class="com.mashibing.bean.Address">
+                    <property name="province" value="translatedText"></property>
+                </bean>
+                <bean class="com.mashibing.bean.Address">
+                    <property name="province" value="translatedText"></property>
+                </bean>
+                &lt;!&ndash;translatedTextbean，translatedTextIOCtranslatedText&ndash;&gt;
+                <ref bean="address"></ref>
+            </list>
+        </property>
+            &lt;!&ndash;translatedTextsettranslatedText&ndash;&gt;
+        <property name="sets">
+            <set>
+                <value>zhangsan</value>
+                <value>zhangsan</value>
+                <value>lisi</value>
+            </set>
+        </property>
+        &lt;!&ndash;translatedTextmaptranslatedText&ndash;&gt;
+        <property name="maps">
+            <map>
+                <entry key="a" value="aaa"></entry>
+                <entry key="address" value-ref="address"></entry>
+                <entry key="address2">
+                    <bean class="com.mashibing.bean.Address">
+                        <property name="province" value="translatedText"></property>
+                    </bean>
+                </entry>
+                <entry>
+                    <key>
+                        <value>heihei</value>
+                    </key>
+                    <value>haha</value>
+                </entry>
+                <entry key="list">
+                    <list>
+                        <value>11</value>
+                        <value>22</value>
+                    </list>
+                </entry>
+            </map>
+        </property>
+        &lt;!&ndash;translatedTextpropertiestranslatedText&ndash;&gt;
+        <property name="properties">
+            <props>
+                <prop key="111">aaa</prop>
+                <prop key="222">bbb</prop>
+            </props>
+        </property>
+    </bean>
+    <bean id="address" class="com.mashibing.bean.Address">
+        <property name="province" value="translatedText"></property>
+        <property name="city" value="translatedText"></property>
+        <property name="town" value="translatedText"></property>
+    </bean>
+
+    &lt;!&ndash;beantranslatedText&ndash;&gt;
+    &lt;!&ndash;translatedTextabstracttranslatedTextbean，translatedText&ndash;&gt;
+    <bean id="parent" class="com.mashibing.bean.Person" abstract="false">
+        <property name="id" value="1"></property>
+        <property name="name" value="zhangsan"></property>
+        <property name="age" value="20"></property>
+        <property name="gender" value="translatedText"></property>
+    </bean>
+    &lt;!&ndash;translatedTextparenttranslatedTextbeantranslatedText&ndash;&gt;
+    <bean id="son" class="com.mashibing.bean.Person" parent="parent">
+        <property name="name" value="haha"></property>
+    </bean>-->
+
+    <!--translatedTextbeantranslatedText
+    translatedTextbeantranslatedText，translatedTextxmltranslatedText，translatedText，translatedText
+        translatedText，translatedTextdepends-ontranslatedText
+    translatedTextbeantranslatedText，translatedText，translatedText
+    -->
+<!--    <bean id="address" class="com.mashibing.bean.Address" depends-on="person"></bean>-->
+<!--    <bean id="person" class="com.mashibing.bean.Person"></bean>-->
+
+    <!--translatedTextbeantranslatedText
+    translatedTextscopetranslatedTextbeantranslatedText
+    singleton：translatedText，translatedTextIOCtranslatedText，translatedText
+    prototype：translatedText，translatedTextIOCtranslatedText
+
+    translatedTextspring4.xtranslatedText：
+    request：translatedText
+    session：translatedText
+            translatedText，translatedText，translatedText5translatedText
+    translatedText：
+        translatedTextsingletontranslatedText，translatedTextIOCtranslatedText
+        translatedTextprototypeztranslatedText，translatedText
+    -->
+<!--    <bean id="person2" class="com.mashibing.bean.Person" scope="singleton"></bean>-->
+
+    <!--translatedTextbean-->
+    <!--translatedText：translatedText.translatedText（）-->
+<!--    <bean id="person" class="com.mashibing.factory.PersonStaticFactory" factory-method="getInstance">-->
+<!--        <constructor-arg value="zhangsan"></constructor-arg>-->
+<!--    </bean>-->
+    <!--translatedText：translatedText，translatedText
+        factory-bean:translatedText
+        factory-method:translatedText
+    -->
+<!--    <bean id="instanceFactory" class="com.mashibing.factory.PersonInstanceFactory"></bean>-->
+<!--    <bean id="person2" class="com.mashibing.bean.Person" factory-bean="instanceFactory" factory-method="getInstance">-->
+<!--        <constructor-arg value="lisi"></constructor-arg>-->
+<!--    </bean>-->
+
+<!--    <bean id="myFactoryBean" class="com.mashibing.factory.MyFactoryBean"></bean>-->
+
+    <!--springtranslatedText
+    init-method:translatedText
+    destory-method:translatedText
+    -->
+
+    <!--translatedTextscopetranslatedText
+    translatedTextsingletontranslatedText，translatedText
+    translatedTextprototypetranslatedText，translatedText，translatedText
+    -->
+<!--    <bean id="person" class="com.mashibing.bean.Person" init-method="init" destroy-method="destory" scope="prototype">-->
+
+<!--    </bean>-->
+<!--    <bean id="myBeanPostProcessor" class="com.mashibing.bean.MyBeanPostProcessor"></bean>-->
+<!--    <bean id="address" class="com.mashibing.bean.Address"></bean>-->
+
+    <!--springtranslatedTextbean-->
+<!--    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">-->
+<!--        <property name="username" value="root"></property>-->
+<!--        <property name="password" value="123456"></property>-->
+<!--        <property name="url" value="jdbc:mysql://localhost:3306/demo"></property>-->
+<!--        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>-->
+<!--    </bean>-->
+
+    <!--translatedText，translatedTextcontexttranslatedText-->
+<!--    <context:property-placeholder location="classpath:db.properties"></context:property-placeholder>-->
+    <!--translatedText，
+    springtranslatedText，translatedText，
+    translatedTextusernametranslatedText，translatedText
+    -->
+<!--    <bean id="dataSource2" class="com.alibaba.druid.pool.DruidDataSource">-->
+<!--        <property name="username" value="${username}"></property>-->
+<!--        <property name="password" value="${jdbc.password}"></property>-->
+<!--        <property name="url" value="${url}"></property>-->
+<!--        <property name="driverClassName" value="${driverClassName}"></property>-->
+<!--    </bean>-->
+
+<!--    <bean id="person" class="com.mashibing.bean.Person">-->
+<!--    <property name="name" value="${jdbc.username}"></property>
+</bean>-->
+
+    <!--springtranslatedText-->
+    <bean id="address" class="com.mashibing.bean.Address">
+        <property name="province" value="translatedText"></property>
+        <property name="city" value="translatedText"></property>
+        <property name="town" value="translatedText"></property>
+    </bean>
+<!--    <bean id="address2" class="com.mashibing.bean.Address">-->
+<!--        <property name="province" value="translatedText2"></property>-->
+<!--        <property name="city" value="translatedText2"></property>-->
+<!--        <property name="town" value="translatedText2"></property>-->
+<!--    </bean>-->
+    <!--translatedTextspringtranslatedText，translatedText，springtranslatedTextbeantranslatedTextbeantranslatedText
+    translatedTextautowiretranslatedText，translatedText
+    default/no: translatedText
+    byName:translatedTextidtranslatedText,translatedTextsettranslatedText，translatedText
+    byType:translatedTextbeantranslatedText，translatedText，translatedText，translatedText
+    constructor:translatedText，translatedText，translatedTextbean,translatedTextidtranslatedText
+    -->
+    <!--???translatedTextbytypetranslatedText-->
+    <bean id="person" class="com.mashibing.bean.Person" autowire="byType">
+    </bean>
+
+    <!--SpELtranslatedText-->
+    <bean id="person2" class="com.mashibing.bean.Person">
+        <!--translatedTextbeantranslatedText-->
+        <property name="name" value="#{address.province}"></property>
+        <!--translatedText-->
+        <property name="age" value="#{12*2}"></property>
+        <!--translatedTextbean-->
+        <property name="address" value="#{address}"></property>
+        <!--translatedText-->
+        <property name="gender" value="#{T(java.util.UUID).randomUUID().toString().substring(0,5)}"></property>
+        <!--translatedText-->
+        <property name="hobbies" value="#{address.getCity()}"></property>
+    </bean>
+
+</beans>
+

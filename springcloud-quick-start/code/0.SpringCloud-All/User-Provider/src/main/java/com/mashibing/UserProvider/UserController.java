@@ -29,7 +29,7 @@ public class UserController implements UserApi {
 	public String alive() {
 
 		try {
-			System.out.println("准备睡");
+			System.out.println("translatedText");
 			
 			Thread.sleep(500);
 		} catch (InterruptedException e) {
@@ -38,7 +38,7 @@ public class UserController implements UserApi {
 		}
 
 		int i = count.getAndIncrement();
-		System.out.println(port + " 好的 ====第：" + i + "次调用");
+		System.out.println(port + " translatedText ====translatedText：" + i + "translatedText");
 		return "port:" + port;
 	}
 

@@ -2,7 +2,7 @@ package com.mashibing.eurekaserver;
 
 public class ResponseEntity {
 
-	// 状态码
+	// translatedText
 	int code;
 	Object date;
 	String msg;

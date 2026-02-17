@@ -28,7 +28,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-		<!-- 引入自定义的API -->
+		<!-- translatedTextAPI -->
 		<dependency>
 			<groupId>com.mashibing.User-API</groupId>
 			<artifactId>User-API</artifactId>
@@ -38,7 +38,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-zipkin</artifactId>
 		</dependency>
-		<!-- 引入sleuth依赖 -->
+		<!-- translatedTextsleuthtranslatedText -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-sleuth</artifactId>

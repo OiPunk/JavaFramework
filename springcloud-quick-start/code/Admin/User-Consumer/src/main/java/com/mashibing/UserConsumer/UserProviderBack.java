@@ -13,7 +13,7 @@ public class UserProviderBack implements ConsumerApi {
 
 
 		
-		return "降级了";
+		return "translatedText";
 	}
 
 	@Override

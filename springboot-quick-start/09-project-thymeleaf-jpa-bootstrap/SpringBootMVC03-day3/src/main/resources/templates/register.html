@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>translatedText</title>
+
+
+<!-- translatedText Bootstrap translatedText css translatedText -->
+<!-- translatedTexturltranslatedText translatedText @translatedText translatedText translatedText contextpath -->
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+<!-- translatedText Bootstrap translatedText JavaScript translatedText -->
+<script th:src="@{/js/bootstrap.min.js}" ></script>
+
+
+<script type="text/javascript" th:inline="javascrpt">
+
+</script>
+</head>
+<body>
+
+
+
+<p th:text="${stat == null ? '':stat.msg}" class="bg-danger">...</p>
+<p>
+
+
+</p>
+<hr>
+
+
+<a th:href="@{/list}">translatedText</a>
+<a th:href="@{/register}">translatedText</a>
+
+<form action="register" method="post">
+  <div class="form-group">
+    <label for="loginName">loginName</label>
+    <input type="text" name="loginName" class="form-control" id="loginName" placeholder="translatedText">
+  </div>
+  
+  
+  <div class="form-group">
+    <label for="Password">Password</label>
+    <input type="password" name="password" class="form-control" id="Password" placeholder="translatedText">
+  </div>
+
+  <div class="form-group">
+    <label for="nickName">translatedText</label>
+    <input type="text" name="nickName" class="form-control" id="nickName" placeholder="translatedText？">
+  </div>
+  <div class="form-group">
+    <label for="age">translatedText</label>
+    <input type="text" name="age" class="form-control" id="age" placeholder="translatedText？">
+  </div>
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+
+
+</body>
+</html>

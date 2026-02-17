@@ -20,7 +20,7 @@ import com.netflix.discovery.EurekaClient;
 public class MainController {
 
 	@Autowired
-	// 抽象
+	// translatedText
 	DiscoveryClient client;
 	
 	@Autowired
@@ -67,10 +67,10 @@ public class MainController {
 	@GetMapping("/client4")
 	public Object client4() {
 		
-		// 具体服务
+		// translatedText
 	//	List<InstanceInfo> instances = client2.getInstancesById("localhost:provider:80");
 		
-		// 使用服务名 ，找列表
+		// translatedText ，translatedText
 		List<InstanceInfo> instances = client2.getInstancesByVipAddress("provider", false);
 		
 		
@@ -79,7 +79,7 @@ public class MainController {
 		}
 		
 		if(instances.size()>0) {
-			// 服务
+			// translatedText
 			InstanceInfo instanceInfo = instances.get(0);
 			if(instanceInfo.getStatus() == InstanceStatus.UP) {
 				
@@ -104,7 +104,7 @@ public class MainController {
 	@GetMapping("/client5")
 	public Object client5() {
 		
-		// ribbon 完成客户端的负载均衡，过滤掉down了的节点
+		// ribbon translatedText，translatedTextdowntranslatedText
 		ServiceInstance instance = lb.choose("provider");
 		
 		String url ="http://" + instance.getHost() +":"+ instance.getPort() + "/getHi";

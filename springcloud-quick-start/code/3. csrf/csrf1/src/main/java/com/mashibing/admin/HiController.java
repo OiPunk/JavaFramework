@@ -8,7 +8,7 @@ public class HiController {
 	@GetMapping("/hi")
 	public String hi() {
 	//	UserDetailsServiceAutoConfiguration
-		System.out.println("来啦老弟~！");
+		System.out.println("translatedText~！");
 		return "hi";
 	}
 }

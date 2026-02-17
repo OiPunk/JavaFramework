@@ -13,23 +13,23 @@ import org.springframework.stereotype.Service;
 // User Service
 @Service
 public class MyDetailsService implements UserDetailsService {
-	// 完全自定义 脱离了  自动配置的数据源 查询数据库
+	// translatedText translatedText  translatedText translatedText
 	@Override
 	
 //	@Autowired
 //	UserDao userDao;
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		// 从redis 取，mysql 取，jpa
+		// translatedTextredis translatedText，mysql translatedText，jpa
 		
 		if(new Random().nextBoolean()) {
 			
 
-			// 登录成功
-			throw new CredentialsExpiredException("密码已过期，请修改密码之后 在继续操作");
+			// translatedText
+			throw new CredentialsExpiredException("translatedText，translatedText translatedText");
 			
 		}else {
 			
-			throw new LockedException("用户已经被锁定，请联系管理员");
+			throw new LockedException("translatedText，translatedText");
 		}
 	}
 	

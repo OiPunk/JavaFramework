@@ -8,7 +8,7 @@ import java.net.URL;
 import com.alibaba.fastjson.JSONObject;
 
 public class DingDingMessageUtil {
-	// 从钉钉群获取的
+	// translatedText
 	public static String access_token = "55420aefab13c4cf75b3ad144a0efa71ba406ba0037e2619fb99ad2ca5e2c452";
 
 	public static void sendTextMessage(String msg) {
@@ -20,7 +20,7 @@ public class DingDingMessageUtil {
 			message.setMsgtype("text");
 			message.setText(new MessageInfo(msg));
 			URL url = new URL("https://oapi.dingtalk.com/robot/send?access_token=" + access_token);
-			// 建立 http 连接
+			// translatedText http translatedText
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setDoOutput(true);
 			conn.setDoInput(true);

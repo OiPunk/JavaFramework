@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--translatedTextbeantranslatedTextIOCtranslatedTextbean，translatedText
+        translatedText，translatedText
+        @Component：translatedText，translatedText，translatedTextbeantranslatedText
+        @Controller：translatedText，translatedText
+        @Service：translatedText，
+        @Repository：translatedText
+
+        translatedTextbeantranslatedText,translatedTextspringtranslatedText
+        translatedTextspringtranslatedText，translatedText，translatedText，translatedTextbeantranslatedText
+        translatedText，translatedText，translatedText。
+        translatedText，translatedText，translatedTextbeantranslatedText@ComponenttranslatedText
+
+        translatedText，translatedTextspringtranslatedText,translatedText
+        translatedTextcontexttranslatedText
+
+        translatedTextidtranslatedTextclass，translatedTextidtranslatedText
+        translatedTextid，translatedText，translatedTextvaluetranslatedText。
+
+        @ScopetranslatedText
+    -->
+<!--    <bean id="personController" class="com.mashibing.controller.PersonController" ></bean>-->
+
+
+    <context:component-scan base-package="com.mashibing" >
+        <!--translatedText，translatedText，translatedText，translatedText
+        include-filter:translatedText,translatedText，translatedText，translatedText。
+        exclude-filter:translatedText，translatedText
+
+        type:translatedText
+        expression：translatedText
+
+        assignable:translatedText。translatedText
+        annotation:translatedText，translatedText
+        regex:translatedText，translatedText
+        aspectj:translatedText，translatedText
+        custom:translatedText，translatedText，translatedText
+
+        -->
+<!--        <context:exclude-filter type="assignable" expression="com.mashibing.controller.PersonController"/>-->
+<!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+        <context:include-filter type="assignable" expression="com.mashibing.service.PersonService"/>
+    </context:component-scan>
+
+<!--    <bean id="personController" class="com.mashibing.controller.PersonController" autowire=""></bean>-->
+</beans>

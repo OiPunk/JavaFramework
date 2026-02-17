@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--beantranslatedTextbeantranslatedText
+        id:beantranslatedText，translatedTextbeantranslatedText
+        class:translatedTextbeantranslatedText
+    -->
+    <bean id="person" class="com.mashibing.bean.Person">
+        <!--translatedTextpropertytranslatedText
+        name:translatedText
+        value：translatedText
+        -->
+        <property name="id" value="1"></property>
+        <property name="name" value="zhangsan"></property>
+        <property name="age" value="20"></property>
+        <property name="gender" value="translatedText"></property>
+     </bean>
+</beans>

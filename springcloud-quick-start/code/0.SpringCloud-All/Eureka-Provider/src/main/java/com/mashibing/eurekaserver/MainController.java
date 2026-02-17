@@ -24,7 +24,7 @@ public class MainController {
 	@GetMapping("/getHi")
 	public String getHi() {
 		
-		return "Hi!,我的port：" + port;
+		return "Hi!,translatedTextport：" + port;
 	}
 	
 	

@@ -31,7 +31,7 @@ public class RestService {
 	public String back() {
 		
 		
-		return "呵呵";
+		return "translatedText";
 	}
 
 }

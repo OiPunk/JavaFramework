@@ -14,7 +14,7 @@ public class EmpController {
     @Autowired
     private EmpMapper empMapper;
 
-    //选择全部用户
+    //translatedText
     @GetMapping("/selectEmp")
     public String selectEmp(){
         List<Emp> emps = empMapper.selectEmp();
@@ -23,26 +23,26 @@ public class EmpController {
         }
         return "ok";
     }
-    //根据id选择用户
+    //translatedTextidtranslatedText
     @GetMapping("/selectEmpById")
     public String selectEmpById(){
         Emp emp = empMapper.selectEmpById(1234);
         System.out.println(emp);
         return "ok";
     }
-    //添加一个用户
+    //translatedText
     @GetMapping("/addEmp")
     public String addEmp(){
         empMapper.addEmp(new Emp(1234,"heheda"));
         return "ok";
     }
-    //修改一个用户
+    //translatedText
     @GetMapping("/updateEmp")
     public String updateEmp(){
         empMapper.updateEmp(new Emp(1234,"heihei"));
         return "ok";
     }
-    //根据id删除用户
+    //translatedTextidtranslatedText
     @GetMapping("/deleteEmp")
     public String deleteEmp(){
         empMapper.deleteEmp(1234);

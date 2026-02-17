@@ -35,13 +35,13 @@
 		</dependency>
 
 
-		<!-- 引入自定义的API -->
+		<!-- translatedTextAPI -->
 		<dependency>
 			<groupId>com.mashibing.User-API</groupId>
 			<artifactId>User-API</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-		<!-- 引入sleuth依赖 -->
+		<!-- translatedTextsleuthtranslatedText -->
 		      <dependency>
         <groupId>de.codecentric</groupId>
         <artifactId>spring-boot-admin-starter-client</artifactId>
@@ -68,7 +68,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
 		</dependency>
-		<!-- HttpClient 实现 -->
+		<!-- HttpClient translatedText -->
 		<dependency>
 			<groupId>io.github.openfeign</groupId>
 			<artifactId>feign-httpclient</artifactId>

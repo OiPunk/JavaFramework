@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface UserApi {
 
 	/**
-	 * 老师，工作中有专门起一个公共api服务的吗
+	 * translatedText，translatedTextapitranslatedText
 	 * 
-	 * 查看当前服务状态~~~
+	 * translatedText~~~
 	 * @return (* ￣3)(ε￣ *)
 	 */
 	@GetMapping("/User/alive")

@@ -28,10 +28,10 @@ public class UserController implements UserApi {
 	@Override
 	public String alive() {
 
-			System.out.println("准备睡");
+			System.out.println("translatedText");
 
 			int i = 1/0;
-		System.out.println(port + " 好的 ====第：" + i + "次调用");
+		System.out.println(port + " translatedText ====translatedText：" + i + "translatedText");
 		return "port:" + port;
 	}
 

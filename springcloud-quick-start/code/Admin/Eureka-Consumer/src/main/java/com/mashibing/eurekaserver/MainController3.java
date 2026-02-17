@@ -32,7 +32,7 @@ public class MainController3 {
 	
 	
 	@Autowired
-	// 抽象
+	// translatedText
 	DiscoveryClient client;
 	
 	@Autowired
@@ -48,7 +48,7 @@ public class MainController3 {
 	
 	@GetMapping("/client10")
 	public Object client10() {
-		// 自动处理URL
+		// translatedTextURL
 		String url ="http://provider/getHi";
 		   
 		String respStr = restTemplate.getForObject(url, String.class);
@@ -62,7 +62,7 @@ public class MainController3 {
 	}
 	@GetMapping("/client11")
 	public Object client11() {
-		// 自动处理URL
+		// translatedTextURL
 		String url ="http://provider/getMap";
 		   
 		Map<String,String> map = restTemplate.getForObject(url, Map.class);
@@ -74,7 +74,7 @@ public class MainController3 {
 	
 	@GetMapping("/client12")
 	public Object client12() {
-		// 自动处理URL
+		// translatedTextURL
 		String url ="http://provider/getObj";
 		   
 		Person object = restTemplate.getForObject(url, Person.class);
@@ -85,7 +85,7 @@ public class MainController3 {
 	
 	@GetMapping("/client13")
 	public Object client13() {
-		// 自动处理URL
+		// translatedTextURL
 		String url ="http://provider/getObj2?name={1}";
 		   
 		Person object = restTemplate.getForObject(url, Person.class,"maxiaoliu666");
@@ -96,7 +96,7 @@ public class MainController3 {
 	
 	@GetMapping("/client14")
 	public Object client14() {
-		// 自动处理URL
+		// translatedTextURL
 		String url ="http://provider/getObj2?name={name}";
 		Map<String, String> map = Collections.singletonMap("name", "xiao66");
 		   
@@ -108,7 +108,7 @@ public class MainController3 {
 	
 	@GetMapping("/client15")
 	public Object client15(HttpServletResponse response) throws Exception {
-		// 自动处理URL
+		// translatedTextURL
 		String url ="http://provider/postLocation";
 
 		   

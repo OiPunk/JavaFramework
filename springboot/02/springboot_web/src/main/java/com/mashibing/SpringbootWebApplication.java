@@ -18,7 +18,7 @@ public class SpringbootWebApplication {
         SpringApplication.run(SpringbootWebApplication.class, args);
     }
 
-    //将自定义的servlet添加到springboot容器中,当配置了urlmappings之后，servlet自己的配置就不会生效
+    //translatedTextservlettranslatedTextspringboottranslatedText,translatedTexturlmappingstranslatedText，servlettranslatedText
     @Bean
     public ServletRegistrationBean<MyServlet> getServletRegistrationBean(){
         ServletRegistrationBean<MyServlet> bean = new ServletRegistrationBean<>(new MyServlet(),"/s2");

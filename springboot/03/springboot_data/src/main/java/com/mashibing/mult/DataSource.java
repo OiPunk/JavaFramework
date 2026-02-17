@@ -7,7 +7,7 @@ import java.lang.annotation.*;
 @Documented
 public @interface DataSource {
     /**
-     * 切换数据源名称
+     * translatedText
      */
     DataSourceType value() default DataSourceType.REMOTE;
 }

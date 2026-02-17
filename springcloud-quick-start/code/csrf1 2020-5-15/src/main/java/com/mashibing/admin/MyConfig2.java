@@ -40,21 +40,21 @@ public class MyConfig2 extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.
-		// 哪些 地址需要登录
+		// translatedText translatedText
 		authorizeRequests()
-		//所有请求都需要验证
+		//translatedText
 		.anyRequest().authenticated()
 		.and()
 		.formLogin()
 		.and()
 		.sessionManagement()
-		// 允许同时登录的 客户端
+		// translatedText translatedText
 		.maximumSessions(1)
-		// 已经有用户登录后， 不允许相同用户再次登录
+		// translatedText， translatedText
 		.maxSessionsPreventsLogin(true).
 		
 		
-		// cookies 不一定是浏览器 token ，集群 会话 第三方/ 无回话  只在
+		// cookies translatedText token ，translatedText translatedText translatedText/ translatedText  translatedText
 //		.rememberMe()
 //		.and()
 		
@@ -65,7 +65,7 @@ public class MyConfig2 extends WebSecurityConfigurerAdapter {
 
 	@Autowired
 	DataSource dataSource;
-	// session 登录 并发量高 -> jwt
+	// session translatedText translatedText -> jwt
 
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -92,10 +92,10 @@ public class MyConfig2 extends WebSecurityConfigurerAdapter {
 	public static void main(String[] args) {
 		
 		byte[] decode = Base64.getDecoder().decode("MTIzOjE1OTA3NjA2NjkxMTQ6YTc4OGNhOTJhMGE4MzYyN2MzNjhkNzkxZjA5ZGVmZDM");
-	//123:1590760669114:a788ca92a0a83627c368d791f09defd3*(前面两个 值 对不对) sign
-	//用户名+ 权限 + 欢乐豆 + 过期时间 + secret  = 摘要 首次登录（服务器端有 客户端没有）
+	//123:1590760669114:a788ca92a0a83627c368d791f09defd3*(translatedText translatedText translatedText) sign
+	//translatedText+ translatedText + translatedText + translatedText + secret  = translatedText translatedText（translatedText translatedText）
 	System.out.println(new String(decode));
-	// 好处 不需要任何和数据源的校验
+	// translatedText translatedText
 	
 	}
 

@@ -42,15 +42,15 @@ public class MainController {
 		return myconfig;
 	}
 	
-	// 给SpringMVC 编程servlet
+	// translatedTextSpringMVC translatedTextservlet
 	@GetMapping("/alive2")
 	@HystrixCommand(defaultFallback = "back")
 	public String alive2() {
 		/**
-		 * URL 不能变 
+		 * URL translatedText 
 		 * 
 		 * jar
-		 * 文档
+		 * translatedText
 		 */
 		
 		
@@ -61,87 +61,87 @@ public class MainController {
 	
 	public String back() {
 		
-		return "呵呵";
+		return "translatedText";
 	}
 	
 	
 	@GetMapping("/alive")
 	public String alive() {
 		/**
-		 * URL 不能变 
+		 * URL translatedText 
 		 * 
 		 * jar
-		 * 文档
+		 * translatedText
 		 */
 		return api.alive();
 	
 	
 	/**
 	 * 
-	 * 降级
+	 * translatedText
 	 * 
 	 * 
-	 * 隔离
+	 * translatedText
 	 * 
-	 * 熔断
+	 * translatedText
 	 * 
-	 * 自己写
+	 * translatedText
 	 * 
 	 * 
 	 * try{
 	 * 
-	 *     1.   发起向服务方的请求;
-	 *     		1.1 判断连接超时
-	 *     			-> 这次请求 记录到服务里
-	 *     		http请求  线程消耗
+	 *     1.   translatedText;
+	 *     		1.1 translatedText
+	 *     			-> translatedText translatedText
+	 *     		httptranslatedText  translatedText
 	 *     
 	 *     
-	 *     		map(URI,线程数) 
-	 *     		线程池（线程数）
-	 *        阈值 阀值
+	 *     		map(URI,translatedText) 
+	 *     		translatedText（translatedText）
+	 *        translatedText translatedText
 	 *        
-	 *        计数 连续失败次数 达到阈值 
+	 *        translatedText translatedText translatedText 
 	 *        count ++；
 	 *     if(count == 10){
 	 *     
-	 *     new romdom  == 1  按时间
-	 *       发请求
+	 *     new romdom  == 1  translatedText
+	 *       translatedText
 	 *     
 	 *     
 	 *     	throw exception;
 	 *     }
 	 *     
 	 *     
-	 *         请求/不请求/半请求
-	 *         开      关         半开
+	 *         translatedText/translatedText/translatedText
+	 *         translatedText      translatedText         translatedText
 	 *     
-	 *     if （当前线程满了）{
+	 *     if （translatedText）{
 	 *     	throw exception
 	 *     }
 	 *     		
 	 *     
-	 *     		1.2 尝试向其他服务器发起请求
+	 *     		1.2 translatedText
 	 *     
 	 *     
-	 *     注解
+	 *     translatedText
 	 *     
 	 *     
-	 *     2. 还是没成功
+	 *     2. translatedText
 	 *     
 	 *     }catch(Exception e){
 	 *     
-	 *     	1.	避免返回不友好的错误信息
-	 *     			-> 好看点儿的页面  重试按钮 联系邮箱
+	 *     	1.	translatedText
+	 *     			-> translatedText  translatedText translatedText
 	 *     
 	 *     		
-	 *     	2.	return 另外一个东西 写到MQ里 admin 发个邮件
+	 *     	2.	return translatedText translatedTextMQtranslatedText admin translatedText
 	 *     
-	 *     		return "客观稍后再来"；
+	 *     		return "translatedText"；
 	 *     
 	 *     }
 	 *     
 	 *     
-	 *     Hystrix 干的就是这件事儿
+	 *     Hystrix translatedText
 	 */
 	
 	
@@ -172,7 +172,7 @@ public class MainController {
 		HashMap<String, Object> map1 = new HashMap<>(2);
 		
 		map1.put("id", 2000);
-		map1.put("name", "凯");
+		map1.put("name", "translatedText");
 		return api.getMap3(map1);
 	}
 	

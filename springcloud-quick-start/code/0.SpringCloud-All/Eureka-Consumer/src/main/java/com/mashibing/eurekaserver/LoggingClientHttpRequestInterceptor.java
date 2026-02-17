@@ -18,7 +18,7 @@ public class LoggingClientHttpRequestInterceptor implements ClientHttpRequestInt
 		
 		
 
-		System.out.println("拦截啦！！！");
+		System.out.println("translatedText！！！");
 		System.out.println(request.getURI());
 
 		ClientHttpResponse response = execution.execute(request, body);

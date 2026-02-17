@@ -32,23 +32,23 @@ public class MyConfig extends WebSecurityConfigurerAdapter {
 		System.out.println("pass1:" + pass1);
 		System.out.println("pass2:" + pass2);
 		http.
-		// 哪些 地址需要登录
+		// translatedText translatedText
 		authorizeRequests()
-		//所有请求都需要验证
+		//translatedText
 		.anyRequest().authenticated()
 		.and()
 		
 		
-		//permitAll 给没登录的 用户可以访问这个地址的权限
-		//自定义登录页
+		//permitAll translatedText translatedText
+		//translatedText
 		.formLogin().loginPage("/login.html")
 		
 		.loginProcessingUrl("/login").permitAll()
-		// 登录失败 页面
+		// translatedText translatedText
 		.failureUrl("/login.html?error")
-		// 登录成功跳转的页面
+		// translatedText
 		.defaultSuccessUrl("/ok",true).permitAll()
-		// 配置 登录页 的表单name   admin -> 分权限 展示页面
+		// translatedText translatedText translatedTextname   admin -> translatedText translatedText
 		.passwordParameter("oo")
 		.usernameParameter("xx")
 		
@@ -61,16 +61,16 @@ public class MyConfig extends WebSecurityConfigurerAdapter {
 				// TODO Auto-generated method stub
 				exception.printStackTrace();
 				
-				// 判断异常信息 跳转不同页面 比如 密码过期重置
+				// translatedText translatedText translatedText translatedText
 				request.getRequestDispatcher(request.getRequestURL().toString()).forward(request, response);
 				
-				// 记录登录失败次数 禁止登录
+				// translatedText translatedText
 				
 			}
 		})
 		
 		
-		//默认 所有的post请求 都会拦截
+		//translatedText translatedTextposttranslatedText translatedText
 		.and()
 		.csrf()
 		.csrfTokenRepository(new HttpSessionCsrfTokenRepository());
@@ -79,7 +79,7 @@ public class MyConfig extends WebSecurityConfigurerAdapter {
 	}
 	
 	
-	// session 登录  并发量高 -> jwt
+	// session translatedText  translatedText -> jwt
 
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {

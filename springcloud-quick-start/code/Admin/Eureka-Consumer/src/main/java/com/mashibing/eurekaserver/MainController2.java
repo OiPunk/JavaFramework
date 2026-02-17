@@ -23,29 +23,29 @@ public class MainController2 {
 
 	
 	
-	//      /User          资源 事先定义
+	//      /User          translatedText translatedText
 	
 	/*
 	 *     http://xxx/User
 	 *     
 	 *     
 	 *     http://xxx/User/getUserList  Get
-	 *     http://xxx/users  	        Get   约定  像对于到数据的一张表
+	 *     http://xxx/users  	        Get   translatedText  translatedText
 	 *     http://xxx/v1/User/getUserList
 	 * 
 	 * 	   http://xxx/v1/User/deleteById     Get/Post
 	 * 	   
-	 * 		http://xxx/v1/users/1             Get= 获取id=1的这个用户  Delete请求 = 删除 put=修改
+	 * 		http://xxx/v1/users/1             Get= translatedTextid=1translatedText  DeletetranslatedText = translatedText put=translatedText
 	 * 	   http://xxx/v2/users/1
 	 * 
-	 *     针对单表 不再重复crud SpringData Rest
+	 *     translatedText translatedTextcrud SpringData Rest
 	 * 
 	 * 
 	 */
 	
 	
 	@Autowired
-	// 抽象
+	// translatedText
 	DiscoveryClient client;
 	
 	@Autowired
@@ -62,7 +62,7 @@ public class MainController2 {
 	@GetMapping("/client6")
 	public Object client6() {
 		
-		// ribbon 完成客户端的负载均衡，过滤掉down了的节点
+		// ribbon translatedText，translatedTextdowntranslatedText
 		ServiceInstance instance = lb.choose("provider");
 		
 		String url ="http://" + instance.getHost() +":"+ instance.getPort() + "/HelloWorld/getHi";
@@ -73,7 +73,7 @@ public class MainController2 {
 	}
 	
 	/**
-	 * 手动负载均衡
+	 * translatedText
 	 * @return
 	 */
 	
@@ -87,19 +87,19 @@ public class MainController2 {
 		
 		List<ServiceInstance> instances = discoveryClient.getInstances("provider");
 		
-		// 自定义轮训算法
+		// translatedText
 		
-		// 随机
+		// translatedText
 		int nextInt = new Random().nextInt(instances.size());
 		AtomicInteger atomicInteger = new AtomicInteger();
 	
-		// 轮训
+		// translatedText
 		int i = atomicInteger.getAndIncrement();
 		instances.get(i % instances.size());
 		
-		// 权重。。
+		// translatedText。。
 		for (ServiceInstance serviceInstance : instances) {
-	//	int quanzhong = 	serviceInstance.getMetadata(); // 权重  1-9
+	//	int quanzhong = 	serviceInstance.getMetadata(); // translatedText  1-9
 		
 		
 		}
@@ -108,7 +108,7 @@ public class MainController2 {
 		
 		ServiceInstance instance = instances.get(nextInt);
 		
-		// ribbon 完成客户端的负载均衡，过滤掉down了的节点
+		// ribbon translatedText，translatedTextdowntranslatedText
 	//	ServiceInstance instance = lb.choose("provider");
 		
 		String url ="http://" + instance.getHost() +":"+ instance.getPort() + "/getHi";
@@ -125,7 +125,7 @@ public class MainController2 {
 		
 		
 		
-		// ribbon 完成客户端的负载均衡，过滤掉down了的节点
+		// ribbon translatedText，translatedTextdowntranslatedText
 		ServiceInstance instance = lb.choose("provider");
 		
 		String url ="http://" + instance.getHost() +":"+ instance.getPort() + "/getHi";
@@ -139,7 +139,7 @@ public class MainController2 {
 	
 	@GetMapping("/client9")
 	public Object client9() {
-		// 自动处理URL
+		// translatedTextURL
 		String url ="http://provider/getHi";
 		   
 		String respStr = restTemplate.getForObject(url, String.class);

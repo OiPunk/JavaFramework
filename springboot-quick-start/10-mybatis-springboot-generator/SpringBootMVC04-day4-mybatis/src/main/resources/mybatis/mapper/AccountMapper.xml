@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        
+        
+ <!-- namespace translatedText translatedText translatedText -->
+<mapper namespace="com.mashibing.springboot.mapper.AccountMapper">
+
+
+
+<!-- pojotranslatedText translatedText     -->
+	<resultMap type="com.mashibing.springboot.mapper.Account" id="BaseResultMap">
+		<!-- column translatedText -->
+		<!-- property translatedText -->
+		<result column="login_name" property="loginName"/>
+		<result column="password" property="password"/>
+	</resultMap>
+
+
+<!-- <select id=""> translatedTextselect translatedText 
+	<select id="findAll" resultMap="BaseResultMap">
+		select * from account
+	</select>
+
+ -->
+ 
+ 
+ 
+ 
+ <insert id="add" parameterType="Account">
+ 	insert into account(login_name,password)
+ 	values 
+ 	(
+ 		#{loginName},#{password}
+ 	)
+ 
+ </insert>
+
+</mapper>
